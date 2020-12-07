@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class AccountController extends Controller
 {
-    public function getValues()
+    public function execute(Request $data)
     {
-        return "Okay";
+        dd($data);
     }
 }

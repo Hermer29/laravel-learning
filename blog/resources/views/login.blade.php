@@ -1,7 +1,7 @@
-@extends('layouts.mainfile')
+@extends('layouts.pattern')
 
 @section('content')
-<form action="{{route('login-form')}}" method="post" >
+<form action="{{route('login-submit')}}" method="post" >
     @csrf
     <div class="form-group">
         <label for="login">Введите логин:</label>
@@ -13,9 +13,6 @@
     </div>
     <button type="submit" class="btn btn-success">Войти</button>
 </form>
-
-
-
 @endsection
 
 @section('title', 'Login')
