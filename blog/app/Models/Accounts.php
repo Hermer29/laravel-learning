@@ -9,4 +9,4 @@ class Accounts extends Model
 {
     protected $table = 'accounts';
     use HasFactory;
-}   
+}
