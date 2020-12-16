@@ -13,6 +13,7 @@
     </div>
     <button id="submit-form" type="submit" class="btn btn-success">Войти</button>
 </form>
+
 @if($errors->any())
 <div class="errors">
     @foreach($errors -> all() as $error)
@@ -20,6 +21,8 @@
     @endforeach
 </div>
 @endif
+
+<form action
 @endsection
 
 @section('title', 'Login')

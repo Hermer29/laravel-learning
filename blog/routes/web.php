@@ -14,4 +14,10 @@ Route::get('/feed', function () {
     return view('feed');
 }) -> name('feed');
 
-Route::post('/login/submit', "AccountController@execute") -> name('login-submit');
+Route::post('/login/submit', "AccountController@login") -> name('login-submit');
+
+Route::post('/register', function () {
+    return view('register');
+}) -> name('register');
+
+Route::post('/register/submit', "AccountController@register") -> name('register-submit');
