@@ -3,3 +3,10 @@
     margin-right: 400px;
     margin-bottom: 300px;
 }
+
+#submit-form {}
+
+.wrong {
+    background-color: #e32929;
+    border-color: #e32929;
+}

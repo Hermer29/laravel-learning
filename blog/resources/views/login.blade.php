@@ -11,8 +11,15 @@
         <label for="password">Введите пароль:</label>
         <input type="password" name="password" placeholder="Пароль" id="password" class="form-control">
     </div>
-    <button type="submit" class="btn btn-success">Войти</button>
+    <button id="submit-form" type="submit" class="btn btn-success">Войти</button>
 </form>
+@if($errors->any())
+<div class="errors">
+    @foreach($errors -> all() as $error)
+        {{$error}}<br>
+    @endforeach
+</div>
+@endif
 @endsection
 
 @section('title', 'Login')
