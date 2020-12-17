@@ -16,8 +16,10 @@ Route::get('/feed', function () {
 
 Route::post('/login/submit', "AccountController@login") -> name('login-submit');
 
-Route::post('/register', function () {
+Route::get('/register', function () {
     return view('register');
 }) -> name('register');
 
 Route::post('/register/submit', "AccountController@register") -> name('register-submit');
+
+Route::get('/accounts', 'AccountController@getAll') -> name('accounts');

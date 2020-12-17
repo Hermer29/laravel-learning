@@ -1,0 +1,9 @@
+.content {
+    margin: auto;
+    padding: 10px;
+    width: 75%;
+}
+
+.error {
+    font: color darkred;
+}

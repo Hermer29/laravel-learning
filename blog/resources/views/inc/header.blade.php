@@ -5,4 +5,5 @@
     <a class="p-2 text-dark" href="{{route('feed')}}">Новости</a>
   </nav>
   <a class="btn btn-outline-primary" href="{{route('login')}}">Войти</a>
+  <a class="btn btn-outline-primary" href="{{route('register')}}">Зарегистрироваться</a>
 </div>                                                                                                      
