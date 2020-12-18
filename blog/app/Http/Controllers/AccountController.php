@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
+use App\Http\Requests\CommonRequest;
 use App\Models\AccountModel;
 
 class AccountController extends Controller
@@ -27,13 +28,14 @@ class AccountController extends Controller
         $model -> password =    $request -> input('password');
         $model -> firstname =   $request -> input('firstname');
         $model -> lastname =    $request -> input('lastname');
+        $model -> email =       $request -> input('email');
 
         $model -> save();
 
-        return redirect() -> route('home');
+        return redirect() -> route('register');
     }
 
-    public function getAll(Request $request)
+    public function getAll(CommonRequest $request)
     {
         $accounts = new AccountModel();
 
